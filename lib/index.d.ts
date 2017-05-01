@@ -1,2 +1,2 @@
-declare function doSomething(a: number): number;
-export default doSomething;
+declare function make(sheet: object): (...keys: (string | false)[]) => {};
+export default make;
