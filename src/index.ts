@@ -1,6 +1,9 @@
+type IFalsey = undefined | null | false
+
+
 function make(sheet: object) {
 
-  return function(...keys: Array<false | string>) {
+  return function(...keys: Array<IFalsey | string>) {
     let styles = {}
 
     for (let key of keys) {
