@@ -1,6 +1,6 @@
 {
   "name": "@mcrowe/tss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Strongly typed inline stylesheets for React",
   "author": "Mitch Crowe <code@mitchcrowe.com> (http://www.mitchcrowe.com)",
   "license": "ISC",
