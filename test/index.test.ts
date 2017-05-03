@@ -47,4 +47,9 @@ test('Stylesheet', () => {
     fontSize: 13
   }, $('a', {fontSize: 13}))
 
+  assert.deepEqual({
+    color: '#aabbcc',
+    fontSize: 12
+  }, $('a', undefined))
+
 })

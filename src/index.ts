@@ -1,9 +1,12 @@
-type IFalsey = undefined | null | false
+// TODO: Typescript compresses this type down to string for some reason.
+//       fix it so that we can be type-safe.
+// export type IKey = string | object | undefined | false | null
+export type IKey = any
 
 
 function make(sheet: object) {
 
-  return function(...keys: Array<IFalsey | string | object>) {
+  return function(...keys: IKey[]) {
     let styles = {}
 
     for (let key of keys) {
